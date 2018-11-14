@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}
+.data {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+}
+.data-inside {
+  width: 80vw;
+}
+.data h3 {
+  font-size: 25px;
+}
+.data h5 {
+  font-size: 22px;
+}
+.data p {
+  font-size: 18px;
+}

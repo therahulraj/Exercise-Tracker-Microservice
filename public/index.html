@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise Tracker</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+<div class="data">
+  <div class="data-inside">
+    <h3>Exercise tracker</h3>
+
+  <div class="create">
+    <h3>Create a new User</h3>
+    <code>POST /api/exercise/new-user</code><br>
+    <form action="/api/exercise/new-user" method="post">
+    <input type="text" name="username" id="username" placeholder="username">
+    <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="description">
+    <h3>Add exercise</h3>
+    <code>POST /api/exercise/add</code><br>
+    <form action="/api/exercise/add" method="post">
+    <input type="text" name="userid" id="userid" placeholder="userid*">
+    <input type="text" name="description" id="description" placeholder="description*">
+    <input type="text" name="duration" id="duration" placeholder="duration*">
+    <input type="text" name="date" id="date" placeholder="date (yyyy-mm-dd)">
+    <input type="submit" value="Submit">
+    </form>
+  </div>
+  <p><strong>GET users's exercise log: </strong><code> GET /api/exercise/log?{userId}[&from][&to][&limit]</code></p>
+  <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
+  <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+  <p>by <a href="#">Rahul Raj</a></p>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/basic.js"></script>
+
+</body>
+</html>
